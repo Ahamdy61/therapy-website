@@ -24,7 +24,9 @@ body{
 }
 
 .logo{
-    width:120px;
+    width:280px;
+    max-width:80%;
+    height:auto;
     margin-bottom:30px;
 }
 
