@@ -6,7 +6,9 @@
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    background:#0f0f0f;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(212,175,55,.08), transparent 35%),
+        #0f0f0f;
     color:#fff;
 }
 
