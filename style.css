@@ -549,3 +549,62 @@ nav ul li a:hover{
     }
 
 }
+/* ================= BOOKING ================= */
+
+.booking{
+    padding:120px 20px;
+    background:#0f0f0f;
+}
+
+.booking-intro{
+    max-width:700px;
+    margin:0 auto;
+    color:#999;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.booking-box{
+    max-width:850px;
+    margin:60px auto 0;
+    padding:60px 40px;
+    border:1px solid rgba(212,175,55,.2);
+    border-radius:24px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(212,175,55,.07),
+            rgba(255,255,255,.02)
+        );
+    text-align:center;
+}
+
+.booking-content h3{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.booking-content p{
+    max-width:600px;
+    margin:0 auto 30px;
+    color:#aaa;
+    line-height:1.8;
+}
+
+.booking-btn{
+    display:inline-block;
+}
+
+/* ================= BOOKING MOBILE ================= */
+
+@media (max-width:768px){
+
+    .booking{
+        padding:90px 20px;
+    }
+
+    .booking-box{
+        padding:45px 25px;
+    }
+
+}
