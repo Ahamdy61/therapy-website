@@ -202,3 +202,80 @@ nav ul li a:hover{
     }
 
 }
+/* ================= HERO PREMIUM ================= */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:520px;
+    height:520px;
+    border-radius:50%;
+    background:rgba(212,175,55,.06);
+    filter:blur(100px);
+    top:20%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 14px;
+    margin-bottom:28px;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:999px;
+    color:#cfcfcf;
+    background:rgba(255,255,255,.03);
+    font-size:13px;
+    letter-spacing:.5px;
+}
+
+.hero-badge span{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#d4af37;
+    box-shadow:0 0 10px rgba(212,175,55,.7);
+}
+
+.hero h1{
+    font-size:clamp(42px, 6vw, 76px);
+    line-height:1.05;
+    letter-spacing:-2px;
+    margin-bottom:24px;
+}
+
+.hero h1 span{
+    color:#d4af37;
+}
+
+.hero .subtitle{
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.hero .description{
+    max-width:680px;
+}
+
+.scroll-note{
+    margin-top:60px;
+    color:#777;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
