@@ -85,11 +85,11 @@ nav ul li a:hover{
 }
 
 .logo{
-    width:200px;
+    width:210px;
+    max-width:70vw;
     height:auto;
-    margin-bottom:25px;
+    margin-bottom:28px;
 }
-
 h1{
     font-size:58px;
     margin-bottom:15px;
