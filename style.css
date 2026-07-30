@@ -483,3 +483,69 @@ nav ul li a:hover{
     }
 
 }
+/* ================= WHY US ================= */
+
+.why-us{
+    padding:120px 20px;
+    background:#121212;
+    border-top:1px solid rgba(255,255,255,.05);
+}
+
+.why-intro{
+    max-width:680px;
+    margin:0 auto;
+    color:#999;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.why-grid{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.why-card{
+    padding:35px 28px;
+    background:rgba(255,255,255,.025);
+    border:1px solid rgba(255,255,255,.07);
+    border-radius:20px;
+    transition:.35s ease;
+}
+
+.why-card:hover{
+    transform:translateY(-7px);
+    border-color:rgba(212,175,55,.35);
+}
+
+.why-icon{
+    color:#d4af37;
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:22px;
+}
+
+.why-card h3{
+    font-size:23px;
+    margin-bottom:14px;
+}
+
+.why-card p{
+    color:#999;
+    line-height:1.7;
+}
+
+/* ================= WHY MOBILE ================= */
+
+@media (max-width:768px){
+
+    .why-us{
+        padding:90px 20px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+}
