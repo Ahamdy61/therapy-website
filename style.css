@@ -5,10 +5,9 @@
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:
-        radial-gradient(circle at 50% 30%, rgba(212,175,55,.08), transparent 35%),
-        #0f0f0f;
+body{
+    font-family:'Inter',sans-serif;
+    background:#0f0f0f;
     color:#fff;
 }
 
@@ -96,8 +95,7 @@ nav ul li a:hover{
     margin-bottom:28px;
 }
 h1{
-    font-size:58px;
-    margin-bottom:15px;
+    font-family:'Manrope',sans-serif;
 }
 
 .subtitle{
@@ -334,6 +332,7 @@ nav ul li a:hover{
 }
 
 .about h2{
+    font-family:'Manrope',sans-serif;
     font-size:clamp(36px,5vw,60px);
     line-height:1.1;
     margin-bottom:25px;
@@ -607,4 +606,19 @@ nav ul li a:hover{
         padding:45px 25px;
     }
 
+}
+    h1,
+h2,
+h3,
+.brand span{
+    font-family:'Manrope',sans-serif;
+    font-weight:700;
+}
+    html{
+    scroll-behavior:smooth;
+}
+
+::selection{
+    background:#d4af37;
+    color:#111;
 }
