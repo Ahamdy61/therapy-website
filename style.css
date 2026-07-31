@@ -5,7 +5,6 @@
 }
 
 body{
-body{
     font-family:'Inter',sans-serif;
     background:#0f0f0f;
     color:#fff;
@@ -52,11 +51,6 @@ nav{
     color:white;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
 
 nav ul li a{
     text-decoration:none;
@@ -79,14 +73,7 @@ nav ul li a:hover{
     padding:140px 20px 60px;
 }
 
-.hero .container{
-    width:100%;
-    max-width:900px;
-    margin:0 auto;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
+
 
 .logo{
     width:210px;
@@ -149,19 +136,6 @@ h1{
     gap:12px;
 }
 
-.brand span{
-    font-size:20px;
-    font-weight:600;
-    color:#ffffff;
-    letter-spacing:.3px;
-}
-
-.nav-logo{
-    width:58px;
-    height:58px;
-    object-fit:contain;
-    display:block;
-}
 
 /* ================= NAV LINKS ================= */
 
@@ -191,27 +165,19 @@ nav ul li a:hover{
         padding:10px 18px;
     }
 
-    .brand span{
-        font-size:17px;
-    }
-
-    .nav-logo{
-        width:50px;
-        height:50px;
-    }
-
-    nav ul{
-        display:none;
-    }
-
-}
+ 
 /* ================= HERO PREMIUM ================= */
 
 .hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:140px 20px 60px;
     position:relative;
     overflow:hidden;
 }
-
 .hero::before{
     content:"";
     position:absolute;
@@ -227,9 +193,16 @@ nav ul li a:hover{
 }
 
 .hero .container{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     position:relative;
     z-index:2;
 }
+    
 
 .hero-badge{
     display:inline-flex;
@@ -621,4 +594,16 @@ h3,
 ::selection{
     background:#d4af37;
     color:#111;
+}
+h1,
+h2,
+h3{
+    color:#fff;
+}
+
+.about p,
+.services p,
+.why-us p,
+.booking p{
+    color:#bdbdbd;
 }
