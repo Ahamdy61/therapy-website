@@ -1107,3 +1107,77 @@ nav{
     }
 
 }
+    /* ================= BOOKING PREMIUM ================= */
+
+.booking{
+    position:relative;
+    overflow:hidden;
+}
+
+.booking::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.05);
+    filter:blur(100px);
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+
+.booking .section-container{
+    position:relative;
+    z-index:2;
+}
+
+.booking h2{
+    font-family:'Manrope',sans-serif;
+    font-size:clamp(36px,5vw,60px);
+    line-height:1.1;
+    margin-bottom:25px;
+    color:#fff;
+}
+
+.booking h2 span{
+    color:#d4af37;
+}
+
+.booking-box{
+    position:relative;
+    overflow:hidden;
+    transition:.35s ease;
+}
+
+.booking-box:hover{
+    transform:translateY(-5px);
+    border-color:rgba(212,175,55,.4);
+    box-shadow:0 25px 70px rgba(0,0,0,.3);
+}
+
+.booking-content h3{
+    font-family:'Manrope',sans-serif;
+}
+
+.booking-btn{
+    min-width:200px;
+}
+
+@media(max-width:768px){
+
+    .booking-box{
+        margin-top:45px;
+    }
+
+    .booking-content h3{
+        font-size:27px;
+    }
+
+    .booking-btn{
+        width:100%;
+        max-width:280px;
+    }
+
+}
