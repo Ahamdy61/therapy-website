@@ -844,3 +844,82 @@ h3{
     }
 
 }
+    /* ================= SCROLL ANIMATIONS ================= */
+
+.hero .container,
+.about .section-container,
+.services .section-container,
+.why-us .section-container,
+.reviews .section-container,
+.booking .section-container{
+    animation: fadeUp .9s ease both;
+}
+
+.about-card,
+.service-card,
+.why-card,
+.review-card{
+    animation: cardReveal .8s ease both;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes cardReveal{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= PREMIUM BUTTON EFFECT ================= */
+
+.btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.btn::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-120%;
+    width:80%;
+    height:100%;
+    background:rgba(255,255,255,.18);
+    transform:skewX(-20deg);
+    transition:.5s ease;
+}
+
+.btn:hover::after{
+    left:130%;
+}
+
+/* ================= CARD MICRO INTERACTION ================= */
+
+.about-card,
+.service-card,
+.why-card,
+.review-card{
+    will-change:transform;
+}
+
+/* ================= NAVBAR SHADOW ================= */
+
+nav{
+    box-shadow:0 8px 30px rgba(0,0,0,.15);
+}
