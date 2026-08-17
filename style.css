@@ -1817,3 +1817,266 @@ nav{
     }
 
 }
+    /* ================= FEEDBACK PAGE ================= */
+
+.feedback-page{
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    padding:150px 20px 90px;
+    overflow:hidden;
+    background:#0f0f0f;
+}
+
+.feedback-glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.05);
+    filter:blur(110px);
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+
+.feedback-container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:650px;
+    padding:50px 45px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:26px;
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.045),
+        rgba(255,255,255,.015)
+    );
+    box-shadow:0 30px 80px rgba(0,0,0,.35);
+}
+
+.feedback-logo{
+    text-align:center;
+}
+
+.feedback-logo img{
+    width:90px;
+    height:auto;
+    margin-bottom:25px;
+}
+
+.feedback-container h1{
+    text-align:center;
+    font-family:'Manrope',sans-serif;
+    font-size:clamp(35px,6vw,52px);
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.feedback-container h1 span{
+    color:#d4af37;
+}
+
+.feedback-intro{
+    max-width:500px;
+    margin:0 auto 40px;
+    text-align:center;
+    color:#999;
+    line-height:1.8;
+}
+
+
+/* ================= FORM ================= */
+
+.feedback-form{
+    width:100%;
+}
+
+.feedback-group{
+    margin-bottom:30px;
+}
+
+.feedback-group > label{
+    display:block;
+    margin-bottom:12px;
+    color:#d0d0d0;
+    font-size:14px;
+}
+
+
+/* ================= STAR RATING ================= */
+
+.rating{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:center;
+    gap:8px;
+    margin:5px 0;
+}
+
+.rating input{
+    display:none;
+}
+
+.rating label{
+    font-size:38px;
+    color:#333;
+    cursor:pointer;
+    transition:.2s ease;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label{
+    color:#d4af37;
+}
+
+
+/* ================= TEXTAREA ================= */
+
+.feedback-group textarea{
+    width:100%;
+    min-height:180px;
+    resize:vertical;
+    padding:16px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.1);
+    background:rgba(0,0,0,.25);
+    color:#fff;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    line-height:1.7;
+    outline:none;
+    transition:.3s ease;
+}
+
+.feedback-group textarea::placeholder{
+    color:#666;
+}
+
+.feedback-group textarea:focus{
+    border-color:rgba(212,175,55,.6);
+    box-shadow:0 0 0 3px rgba(212,175,55,.08);
+}
+
+.character-count{
+    margin-top:8px;
+    color:#555;
+    font-size:12px;
+    text-align:right;
+}
+
+
+/* ================= VISIBILITY ================= */
+
+.visibility-options{
+    display:flex;
+    gap:15px;
+}
+
+.visibility-option{
+    flex:1;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:15px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:12px;
+    background:rgba(255,255,255,.02);
+    color:#999;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+.visibility-option:hover{
+    border-color:rgba(212,175,55,.3);
+}
+
+.visibility-option input{
+    accent-color:#d4af37;
+}
+
+
+/* ================= CONSENT ================= */
+
+.feedback-consent{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin-bottom:30px;
+    color:#888;
+    font-size:13px;
+    line-height:1.6;
+    cursor:pointer;
+}
+
+.feedback-consent input{
+    margin-top:4px;
+    accent-color:#d4af37;
+}
+
+
+/* ================= SUBMIT ================= */
+
+.feedback-submit{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+}
+
+
+/* ================= NOTE ================= */
+
+.feedback-note{
+    margin-top:35px;
+    padding-top:25px;
+    border-top:1px solid rgba(255,255,255,.07);
+    text-align:center;
+}
+
+.feedback-note span{
+    color:#d4af37;
+    font-size:12px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+.feedback-note p{
+    margin-top:8px;
+    color:#555;
+    font-size:12px;
+    line-height:1.6;
+}
+
+
+/* ================= FEEDBACK MOBILE ================= */
+
+@media(max-width:768px){
+
+    .feedback-page{
+        padding:120px 18px 60px;
+    }
+
+    .feedback-container{
+        padding:40px 22px;
+        border-radius:22px;
+    }
+
+    .feedback-logo img{
+        width:75px;
+    }
+
+    .rating label{
+        font-size:32px;
+    }
+
+    .visibility-options{
+        flex-direction:column;
+    }
+
+}
