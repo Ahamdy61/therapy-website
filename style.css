@@ -1181,3 +1181,28 @@ nav{
     }
 
 }
+    /* ================= CLIENT LOGIN ================= */
+
+.nav-login{
+    padding:9px 16px;
+    border:1px solid rgba(212,175,55,.5);
+    border-radius:999px;
+    color:#d4af37 !important;
+    transition:.3s ease;
+}
+
+.nav-login:hover{
+    background:#d4af37;
+    color:#111 !important;
+    border-color:#d4af37;
+}
+
+@media(max-width:768px){
+
+    .nav-login{
+        display:block;
+        margin:6px 15px 10px;
+        text-align:center;
+    }
+
+}
