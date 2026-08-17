@@ -2080,3 +2080,242 @@ nav{
     }
 
 }
+/* ================= PROFILE PAGE ================= */
+
+.profile-page{
+    min-height:100vh;
+    position:relative;
+    padding:150px 20px 90px;
+    background:#0f0f0f;
+    overflow:hidden;
+}
+
+.profile-page-glow{
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(212,175,55,.05);
+    filter:blur(110px);
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+}
+
+.profile-container{
+    position:relative;
+    z-index:2;
+    max-width:750px;
+    margin:0 auto;
+}
+
+.profile-page-header{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.profile-page-header h1{
+    font-family:'Manrope',sans-serif;
+    font-size:clamp(40px,6vw,58px);
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.profile-page-header h1 span{
+    color:#d4af37;
+}
+
+.profile-page-header p{
+    color:#888;
+    line-height:1.7;
+}
+
+.profile-edit-card{
+    padding:45px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:26px;
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.045),
+        rgba(255,255,255,.015)
+    );
+    box-shadow:0 30px 80px rgba(0,0,0,.3);
+}
+
+
+/* PROFILE PHOTO */
+
+.profile-photo-section{
+    text-align:center;
+    padding-bottom:35px;
+    margin-bottom:35px;
+    border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.profile-photo{
+    width:110px;
+    height:110px;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    border:2px solid rgba(212,175,55,.35);
+    background:rgba(212,175,55,.08);
+}
+
+.profile-photo span{
+    color:#d4af37;
+    font-family:'Manrope',sans-serif;
+    font-size:42px;
+    font-weight:700;
+}
+
+.photo-button{
+    background:none;
+    border:none;
+    color:#d4af37;
+    cursor:pointer;
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+}
+
+.photo-button:hover{
+    text-decoration:underline;
+}
+
+.profile-photo-section p{
+    margin-top:7px;
+    color:#555;
+    font-size:11px;
+}
+
+
+/* FORM */
+
+.profile-form-group{
+    margin-bottom:25px;
+}
+
+.profile-form-group label{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:9px;
+    color:#ccc;
+    font-size:14px;
+}
+
+.profile-form-group label span{
+    color:#555;
+    font-size:11px;
+}
+
+.profile-form-group input,
+.profile-form-group textarea{
+    width:100%;
+    box-sizing:border-box;
+    padding:15px 16px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.1);
+    background:rgba(0,0,0,.25);
+    color:#fff;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    outline:none;
+    transition:.3s ease;
+}
+
+.profile-form-group input:focus,
+.profile-form-group textarea:focus{
+    border-color:rgba(212,175,55,.6);
+    box-shadow:0 0 0 3px rgba(212,175,55,.08);
+}
+
+.profile-form-group textarea{
+    resize:vertical;
+    line-height:1.7;
+}
+
+.profile-form-group small{
+    display:block;
+    margin-top:7px;
+    color:#555;
+    font-size:11px;
+}
+
+
+/* ACTIONS */
+
+.profile-actions{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:20px;
+    margin-top:35px;
+}
+
+.profile-cancel{
+    color:#888;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.profile-cancel:hover{
+    color:#fff;
+}
+
+.profile-save{
+    border:none;
+    cursor:pointer;
+    font-family:'Inter',sans-serif;
+}
+
+
+/* PRIVACY */
+
+.profile-privacy{
+    margin-top:25px;
+    text-align:center;
+}
+
+.profile-privacy span{
+    color:#d4af37;
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+.profile-privacy p{
+    margin-top:8px;
+    color:#555;
+    font-size:12px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .profile-page{
+        padding:120px 18px 60px;
+    }
+
+    .profile-edit-card{
+        padding:30px 22px;
+        border-radius:22px;
+    }
+
+    .profile-actions{
+        flex-direction:column-reverse;
+        align-items:stretch;
+    }
+
+    .profile-save{
+        width:100%;
+    }
+
+    .profile-cancel{
+        text-align:center;
+    }
+
+}
