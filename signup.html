@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Create Account | Adam Mind Studio</title>
+    <title>My Profile | Adam Mind Studio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +37,8 @@
 
             </div>
 
-            <a href="index.html" class="login-back">
-                Back to Website
+            <a href="dashboard.html" class="login-back">
+                Back to Dashboard
             </a>
 
         </div>
@@ -46,162 +46,155 @@
     </nav>
 
 
-    <main class="login-page">
+    <main class="profile-page">
 
-        <div class="login-glow"></div>
+        <div class="profile-page-glow"></div>
 
-        <div class="login-container">
+        <div class="profile-container">
 
-            <div class="login-logo">
+            <div class="profile-page-header">
 
-                <img
-                    src="assets/images/logo.png"
-                    alt="Adam Mind Studio Logo"
-                >
+                <div class="section-label">
+                    CLIENT PROFILE
+                </div>
+
+                <h1>
+                    Your <span>profile.</span>
+                </h1>
+
+                <p>
+                    Keep your personal information up to date.
+                </p>
 
             </div>
 
-            <div class="section-label">
-                CLIENT PORTAL
-            </div>
 
-            <h1>
-                Create <span>your account.</span>
-            </h1>
-
-            <p class="login-intro">
-                Create your private client space to manage
-                appointments and stay connected.
-            </p>
+            <div class="profile-edit-card">
 
 
-            <form class="login-form">
+                <!-- PROFILE PHOTO -->
 
-                <div class="form-group">
+                <div class="profile-photo-section">
 
-                    <label for="fullName">
-                        Full Name
-                    </label>
+                    <div class="profile-photo">
 
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        placeholder="Enter your full name"
-                        autocomplete="name"
+                        <span>
+                            A
+                        </span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="photo-button"
                     >
+                        Change Photo
+                    </button>
+
+                    <p>
+                        JPG or PNG · Max 5MB
+                    </p>
 
                 </div>
 
 
-                <div class="form-group">
+                <!-- PROFILE FORM -->
 
-                    <label for="phone">
-                        Mobile Number
-                    </label>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Enter your mobile number"
-                        autocomplete="tel"
-                    >
-
-                </div>
+                <form class="profile-form">
 
 
-                <div class="form-group">
+                    <div class="profile-form-group">
 
-                    <label for="email">
-                        Email
-                    </label>
+                        <label for="profileName">
+                            Full Name
+                        </label>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        autocomplete="email"
-                    >
+                        <input
+                            type="text"
+                            id="profileName"
+                            name="profileName"
+                            placeholder="Your full name"
+                            value="Client Name"
+                        >
 
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="password">
-                        Password
-                    </label>
-
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Create a password"
-                        autocomplete="new-password"
-                    >
-
-                </div>
+                    </div>
 
 
-                <div class="form-group">
+                    <div class="profile-form-group">
 
-                    <label for="confirmPassword">
-                        Confirm Password
-                    </label>
+                        <label for="profilePhone">
+                            Mobile Number
+                        </label>
 
-                    <input
-                        type="password"
-                        id="confirmPassword"
-                        name="confirmPassword"
-                        placeholder="Confirm your password"
-                        autocomplete="new-password"
-                    >
+                        <input
+                            type="tel"
+                            id="profilePhone"
+                            name="profilePhone"
+                            placeholder="Your mobile number"
+                            value="+20 100 000 0000"
+                        >
 
-                </div>
-
-
-                <label class="remember signup-terms">
-
-                    <input
-                        type="checkbox"
-                        name="terms"
-                    >
-
-                    <span>
-                        I agree to the privacy policy and terms.
-                    </span>
-
-                </label>
+                    </div>
 
 
-                <button
-                    type="submit"
-                    class="btn primary login-button"
-                >
-                    Create Account
-                </button>
+                    <div class="profile-form-group">
 
-            </form>
+                        <label for="profileBio">
+                            About You
+                            <span>Optional</span>
+                        </label>
+
+                        <textarea
+                            id="profileBio"
+                            name="profileBio"
+                            rows="5"
+                            maxlength="500"
+                            placeholder="Tell us a little about yourself..."
+                        ></textarea>
+
+                        <small>
+                            Maximum 500 characters
+                        </small>
+
+                    </div>
 
 
-            <div class="login-divider">
-                <span>or</span>
+                    <div class="profile-actions">
+
+                        <a
+                            href="dashboard.html"
+                            class="profile-cancel"
+                        >
+                            Cancel
+                        </a>
+
+                        <button
+                            type="submit"
+                            class="btn primary profile-save"
+                        >
+                            Save Changes
+                        </button>
+
+                    </div>
+
+
+                </form>
+
             </div>
 
 
-            <p class="create-account">
-                Already have an account?
-                <a href="login.html" class="create-link">
-                    Login
-                </a>
-            </p>
+            <div class="profile-privacy">
 
+                <span>
+                    🔒 Private & Confidential
+                </span>
 
-            <p class="privacy-note">
-                Your information is private and confidential.
-            </p>
+                <p>
+                    Your personal information is only used
+                    to manage your client experience.
+                </p>
+
+            </div>
 
         </div>
 
