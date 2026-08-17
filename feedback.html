@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback | Adam Mind Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-container">
+
+            <div class="brand">
+
+                <a href="index.html">
+                    <img
+                        src="assets/images/logo.png"
+                        class="nav-logo"
+                        alt="Adam Mind Studio Logo"
+                    >
+                </a>
+
+                <span>Adam Mind Studio</span>
+
+            </div>
+
+            <a href="dashboard.html" class="login-back">
+                Back to Dashboard
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="feedback-page">
+
+        <div class="feedback-glow"></div>
+
+        <div class="feedback-container">
+
+            <div class="feedback-logo">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="Adam Mind Studio Logo"
+                >
+
+            </div>
+
+            <div class="section-label">
+                YOUR EXPERIENCE
+            </div>
+
+            <h1>
+                Tell us what you <span>think.</span>
+            </h1>
+
+            <p class="feedback-intro">
+                Your feedback helps us understand your experience
+                and improve the space we provide.
+            </p>
+
+
+            <form class="feedback-form">
+
+
+                <!-- RATING -->
+
+                <div class="feedback-group">
+
+                    <label>
+                        How was your experience?
+                    </label>
+
+                    <div class="rating">
+
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEEDBACK -->
+
+                <div class="feedback-group">
+
+                    <label for="feedback">
+                        Your feedback
+                    </label>
+
+                    <textarea
+                        id="feedback"
+                        name="feedback"
+                        rows="7"
+                        maxlength="1000"
+                        placeholder="Share anything you'd like us to know about your experience..."
+                    ></textarea>
+
+                    <div class="character-count">
+                        Maximum 1000 characters
+                    </div>
+
+                </div>
+
+
+                <!-- DISPLAY NAME -->
+
+                <div class="feedback-group">
+
+                    <label>
+                        How should your feedback appear?
+                    </label>
+
+                    <div class="visibility-options">
+
+                        <label class="visibility-option">
+
+                            <input
+                                type="radio"
+                                name="visibility"
+                                value="name"
+                                checked
+                            >
+
+                            <span>
+                                Show my name
+                            </span>
+
+                        </label>
+
+
+                        <label class="visibility-option">
+
+                            <input
+                                type="radio"
+                                name="visibility"
+                                value="anonymous"
+                            >
+
+                            <span>
+                                Anonymous
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONSENT -->
+
+                <label class="feedback-consent">
+
+                    <input
+                        type="checkbox"
+                        name="consent"
+                    >
+
+                    <span>
+                        I understand that my feedback may be published
+                        on the website after review.
+                    </span>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn primary feedback-submit"
+                >
+                    Submit Feedback
+                </button>
+
+
+            </form>
+
+
+            <div class="feedback-note">
+
+                <span>Private & Confidential</span>
+
+                <p>
+                    Your feedback will not appear publicly
+                    until it has been reviewed and approved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
